@@ -1,3 +1,5 @@
+#Implement an algorithm to determine if a string has all unique characters.
+
 def is_unique_chars?(string)
   return false if string.length > 128
 
@@ -17,5 +19,8 @@ def is_unique_chars?(string)
   true
 end
 
-puts is_unique_chars?("sentence")
-puts is_unique_chars?("abcdefg123456")
+puts is_unique_chars?("sentence") == false
+puts is_unique_chars?("abcdefg123456") == true
+
+#time complexity == O(n)
+#space complexity == O(1)

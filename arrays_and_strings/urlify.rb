@@ -2,7 +2,7 @@
 #assume that the string has sufficient space at the end to hold additional
 #characters, and that you are given the "true" length of the string.
 
-def replace_spaces(string, true_length)
+def urlify(string, true_length)
   space_count = 0
   idx = 0
   while idx < true_length
@@ -29,4 +29,4 @@ def replace_spaces(string, true_length)
   string
 end
 
-puts replace_spaces("Mr John Smith    ", 13)
+puts urlify("Mr John Smith    ", 13)

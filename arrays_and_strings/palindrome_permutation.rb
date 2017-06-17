@@ -49,7 +49,9 @@ def build_char_frequency_table(phrase)
   table
 end
 
-
+# This algorithm takes O(N) time where N is the length of the string. We
+# cannot optimize the big O time any further since we will always have
+# to look through the entire string.
 
 puts palindrome_permutation?("doggod") == true
 puts palindrome_permutation?("doggaod") == true
